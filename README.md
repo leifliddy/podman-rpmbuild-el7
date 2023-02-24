@@ -22,7 +22,7 @@ Control+D or exit
 **script-podman.py options**  
 
 ```
-usage: script-podman.py [-h] [--auto] [--debug]
+usage: script-podman.py [-h] [--debug]
                         [--rebuild | --rerun | --restart | --rm_image | --rm_container | --stop_container]
 
 options:
