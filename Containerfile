@@ -1,4 +1,4 @@
-FROM registry.centos.org/centos:7
+FROM docker.io/library/centos:centos7
 
 COPY rpms/* /tmp
 
