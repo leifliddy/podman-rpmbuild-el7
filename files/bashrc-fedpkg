@@ -1,0 +1,2 @@
+alias gs='rpkg sources'
+alias loc='fedpkg local'
