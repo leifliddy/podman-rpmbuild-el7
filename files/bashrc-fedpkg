@@ -1,2 +1,6 @@
 alias gs='rpkg sources'
 alias loc='fedpkg local'
+
+shait() {
+  sha512sum --tag $1
+}
