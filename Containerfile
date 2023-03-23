@@ -17,6 +17,7 @@ RUN sed -i 's/override_install_langs=en_US.UTF-8//' /etc/yum.conf &&\
 
 COPY files/bashrc /root/.bashrc
 COPY files/bashrc-default /root/.bashrc.d/default
+COPY files/bashrc-fedpkg /root/.bashrc.d/fedpkg
 COPY files/bashrc-rpmbuild /root/.bashrc.d/rpmbuild
 COPY files/lang.sh /etc/profile.d
 COPY files/rpmmacros /root/.rpmmacros
