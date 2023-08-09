@@ -9,7 +9,7 @@ RUN sed -i 's/override_install_langs=en_US.UTF-8//' /etc/yum.conf &&\
     yum install -y bash-completion dnf dnf-plugins-core fedpkg findutils git python3 python3-devel python3-rpm-macros rpmdevtools vim-enhanced wget &&\
     yum install -y /tmp/*.rpm &&\
     find /root/ -type f | egrep 'anaconda-ks.cfg|anaconda-post-nochroot.log|anaconda-post.log|original-ks.cfg' | xargs rm -f &&\
-    find / -mindepth 1 -type f | egrep 'anaconda-ks.cfg|anaconda-post-nochroot.log|anaconda-post.log|original-ks.cfg' | xargs rm -f &&\
+    find / -maxdepth 1 -type f | egrep 'anaconda-ks.cfg|anaconda-post-nochroot.log|anaconda-post.log|original-ks.cfg' | xargs rm -f &&\
     echo "defaultyes=True" >> /etc/dnf/dnf.conf &&\
     mkdir /root/.bashrc.d &&\
     cp /etc/rpkg.conf /etc/rpkg.conf.orig &&\
